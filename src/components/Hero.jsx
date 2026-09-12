@@ -46,8 +46,8 @@ function Hero() {
         {/* 3D IMAGE */}
 
         <motion.div className="hero-image"
-          initial={{opacity: 0, scale: 0.9}}
-          animate={{opacity: 1, scale: 1}}
+          initial={{opacity: 0}}
+          animate={{opacity: 1}}
           transition={{duration: 1, delay: 0.4}}
         >
           <img
