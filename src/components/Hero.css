@@ -86,15 +86,15 @@
   position: absolute;
 
   width: 220px;
-  max-width: 25vw;
+  max-width: 30vw;
 
 
   left: 50%;
-  top: 58%;
+  top: 63%;
 
   transform: translate(-50%, -50%);
 
-  z-index: 20;
+  z-index: 2;
 
   pointer-events: none;
 }
