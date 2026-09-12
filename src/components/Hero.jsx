@@ -51,7 +51,7 @@ function Hero() {
           transition={{duration: 1, delay: 0.4}}
         >
           <img
-            src="/src/assets/hero.png"
+            src="/hero.png"
             alt="NVRMND creative visual"
           />
         </motion.div>
