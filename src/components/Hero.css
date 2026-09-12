@@ -354,18 +354,6 @@
   }
 
 }
-/* Hero image positioning */
-.hero-image {
-  position: relative;
-  z-index: 0;
-}
-
-.hero-image img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
 .hero-description {
   position: relative;
   z-index: 2;
