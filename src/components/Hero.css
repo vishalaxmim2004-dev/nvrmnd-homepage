@@ -85,12 +85,12 @@
 .hero-image {
   position: absolute;
 
-  width: 260px;
+  width: 320px;
   max-width: 30vw;
 
 
   left: 50%;
-  top: 68%;
+  top: 65%;
 
   transform: translate(-50%, -50%);
 
