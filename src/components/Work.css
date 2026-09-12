@@ -1,0 +1,667 @@
+/* =========================================
+   WORK SECTION
+========================================= */
+
+.work {
+  width: 100%;
+  min-height: 100vh;
+
+  padding: 140px 5vw 120px;
+
+  background: #ffffff;
+  color: #111111;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   TOP HEADER
+========================================= */
+
+.work-top {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 90px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+.work-top span {
+  color: #111111;
+}
+
+
+/* =========================================
+   MAIN TITLE
+========================================= */
+
+.work-main-title {
+  width: 100%;
+
+  margin: 0 auto 150px;
+
+  text-align: center;
+
+  font-size: clamp(65px, 10vw, 150px);
+
+  line-height: 0.82;
+
+  letter-spacing: -6px;
+
+  font-weight: 800;
+
+  color: #111111;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================
+   PROJECT GRID
+========================================= */
+
+.work-grid {
+  width: 100%;
+}
+
+
+/* =========================================
+   PROJECT CARD
+========================================= */
+
+.work-card {
+  position: relative;
+
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: 55% 1fr;
+
+  column-gap: 60px;
+
+  padding: 55px 0 80px;
+
+  border-top: 1px solid #111111;
+
+  box-sizing: border-box;
+}
+
+
+/* Last card */
+
+.work-card:last-child {
+  border-bottom: 1px solid #111111;
+}
+
+
+/* =========================================
+   PROJECT NUMBER
+========================================= */
+
+.work-number {
+  position: absolute;
+
+  top: 18px;
+  left: 0;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  letter-spacing: 2px;
+
+  color: #111111;
+}
+
+
+/* =========================================
+   IMAGE / ANIMATION
+========================================= */
+
+.project-placeholder {
+  grid-column: 1;
+
+  width: 100%;
+  height: 420px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  background: #e5e5e5;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+
+  transition:
+    transform 0.6s ease,
+    background 0.6s ease;
+}
+
+
+/* Image hover */
+
+.work-card:hover .project-placeholder {
+  transform: scale(1.015);
+}
+
+
+/* =========================================
+   VISUAL CONTAINER
+========================================= */
+
+.project-visual {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+}
+
+
+/* =========================================
+   PROJECT 01
+   DIGITAL BRAND
+========================================= */
+
+.project-1 {
+  background: #dcdcdc;
+}
+
+.visual-brand {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-shape {
+  width: 180px;
+  height: 230px;
+
+  background: #222222;
+
+  border-radius: 12px;
+
+  transform: rotate(-8deg);
+
+  box-shadow:
+    40px 35px 0 #aaaaaa;
+
+  transition:
+    transform 0.7s ease;
+}
+
+.work-card:hover .brand-shape {
+  transform:
+    rotate(0deg)
+    scale(1.08)
+    translateY(-10px);
+}
+
+
+/* =========================================
+   PROJECT 02
+   FUTURE SPACE
+========================================= */
+
+.project-2 {
+  background: #cfcfcf;
+}
+
+.visual-space {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+}
+
+.space-circle {
+  position: absolute;
+
+  width: 520px;
+  height: 520px;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+
+  background: #f7f7f7;
+
+  box-shadow:
+    inset 0 0 80px rgba(0, 0, 0, 0.15);
+
+  transition:
+    transform 0.8s ease;
+}
+
+.work-card:hover .space-circle {
+  transform:
+    translate(-50%, -50%)
+    scale(1.08);
+}
+
+
+/* Small person */
+
+.space-person {
+  position: absolute;
+
+  left: 50%;
+  bottom: 35px;
+
+  width: 12px;
+  height: 45px;
+
+  transform: translateX(-50%);
+
+  background: #111111;
+
+  border-radius: 8px;
+}
+
+
+/* =========================================
+   PROJECT 03
+   CREATIVE WORLD
+========================================= */
+
+.project-3 {
+  background: #bdbdbd;
+}
+
+.visual-world {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.world-box {
+  width: 220px;
+  height: 220px;
+
+  border: 3px solid #ffffff;
+
+  transform:
+    perspective(500px)
+    rotateX(10deg)
+    rotateY(-15deg);
+
+  box-shadow:
+    0 0 40px rgba(255, 255, 255, 0.3);
+
+  transition:
+    transform 0.8s ease;
+}
+
+.work-card:hover .world-box {
+  transform:
+    perspective(500px)
+    rotateX(0deg)
+    rotateY(0deg)
+    scale(1.08);
+}
+
+
+/* =========================================
+   RIGHT CONTENT
+========================================= */
+
+.work-content {
+  grid-column: 2;
+
+  align-self: center;
+
+  padding-right: 70px;
+}
+
+
+/* =========================================
+   PROJECT TITLE
+========================================= */
+
+.work-content h3 {
+  margin: 0 0 15px;
+
+  font-size: clamp(36px, 4vw, 65px);
+
+  line-height: 0.95;
+
+  font-weight: 700;
+
+  letter-spacing: -2px;
+
+  color: #111111;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================
+   CATEGORY
+========================================= */
+
+.work-category {
+  margin: 0 0 25px;
+
+  font-size: 22px;
+
+  line-height: 1.3;
+
+  color: #555555;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.work-description {
+  max-width: 480px;
+
+  margin: 0 0 35px;
+
+  font-size: 17px;
+
+  line-height: 1.5;
+
+  color: #666666;
+}
+
+
+/* =========================================
+   VIEW PROJECT
+========================================= */
+
+.work-link {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 25px;
+
+  color: #111111;
+
+  text-decoration: none;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+}
+
+
+/* Line */
+
+.work-link span {
+  display: block;
+
+  width: 90px;
+  height: 1px;
+
+  background: #111111;
+
+  transition:
+    width 0.4s ease;
+}
+
+
+/* Hover line */
+
+.work-link:hover span {
+  width: 130px;
+}
+
+
+/* =========================================
+   ARROW
+========================================= */
+
+.work-arrow {
+  position: absolute;
+
+  right: 0;
+
+  bottom: 80px;
+
+  font-size: 55px;
+
+  line-height: 1;
+
+  color: #111111;
+
+  transition:
+    transform 0.4s ease;
+}
+
+.work-card:hover .work-arrow {
+  transform:
+    translate(8px, -8px);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .work {
+    padding: 100px 5vw 90px;
+  }
+
+
+  .work-main-title {
+    margin-bottom: 100px;
+
+    font-size: clamp(60px, 11vw, 110px);
+
+    letter-spacing: -4px;
+  }
+
+
+  .work-card {
+    grid-template-columns: 50% 1fr;
+
+    column-gap: 35px;
+
+    padding-bottom: 70px;
+  }
+
+
+  .project-placeholder {
+    height: 330px;
+  }
+
+
+  .work-content {
+    padding-right: 50px;
+  }
+
+
+  .work-content h3 {
+    font-size: clamp(32px, 4vw, 48px);
+  }
+
+
+  .work-category {
+    font-size: 18px;
+  }
+
+
+  .work-description {
+    font-size: 15px;
+  }
+
+
+  .work-arrow {
+    font-size: 45px;
+
+    bottom: 60px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .work {
+    padding: 80px 20px 70px;
+  }
+
+
+  .work-top {
+    margin-bottom: 60px;
+
+    font-size: 10px;
+
+    letter-spacing: 1.5px;
+  }
+
+
+  .work-main-title {
+    margin-bottom: 80px;
+
+    font-size: clamp(50px, 15vw, 80px);
+
+    letter-spacing: -3px;
+  }
+
+
+  /* Stack image and content on mobile */
+
+  .work-card {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 30px;
+
+    padding: 50px 0 65px;
+  }
+
+
+  .project-placeholder {
+    width: 100%;
+
+    height: 280px;
+
+    order: 1;
+  }
+
+
+  .work-content {
+    order: 2;
+
+    padding-right: 45px;
+  }
+
+
+  .work-number {
+    top: 18px;
+
+    font-size: 11px;
+  }
+
+
+  .work-content h3 {
+    font-size: 36px;
+
+    letter-spacing: -1.5px;
+
+    margin-bottom: 12px;
+  }
+
+
+  .work-category {
+    font-size: 17px;
+
+    margin-bottom: 18px;
+  }
+
+
+  .work-description {
+    font-size: 15px;
+
+    margin-bottom: 25px;
+  }
+
+
+  .work-link {
+    font-size: 9px;
+
+    letter-spacing: 2px;
+  }
+
+
+  .work-link span {
+    width: 55px;
+  }
+
+
+  .work-arrow {
+    right: 0;
+
+    bottom: 65px;
+
+    font-size: 38px;
+  }
+
+
+  .brand-shape {
+    width: 120px;
+    height: 160px;
+  }
+
+
+  .space-circle {
+    width: 330px;
+    height: 330px;
+  }
+
+
+  .world-box {
+    width: 150px;
+    height: 150px;
+  }
+
+}

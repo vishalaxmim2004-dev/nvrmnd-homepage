@@ -1,0 +1,183 @@
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contact {
+  width: 100%;
+  min-height: 100vh;
+
+  padding: 140px 6vw;
+
+  background: #111111;
+  color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  box-sizing: border-box;
+}
+
+/* =========================
+   SMALL LABEL
+========================= */
+
+.contact-label {
+  margin: 0 0 30px;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: #aaaaaa;
+}
+
+/* =========================
+   MAIN HEADING
+========================= */
+
+.contact h2 {
+  margin: 0;
+
+  max-width: 1000px;
+
+  font-size: clamp(60px, 10vw, 150px);
+  font-weight: 700;
+
+  line-height: 0.88;
+  letter-spacing: -5px;
+
+  color: #ffffff;
+}
+
+/* =========================
+   CONTACT LINK
+========================= */
+
+.contact-link {
+  display: inline-block;
+
+  margin-top: 60px;
+
+  padding: 16px 28px;
+
+  border: 1px solid #ffffff;
+  border-radius: 40px;
+
+  color: #ffffff;
+  background: transparent;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+/* =========================
+   HOVER
+========================= */
+
+.contact-link:hover {
+  background: #ffffff;
+  color: #111111;
+
+  transform: translateY(-4px);
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .contact {
+    padding: 110px 5vw;
+  }
+
+  .contact h2 {
+    font-size: clamp(55px, 10vw, 100px);
+    letter-spacing: -4px;
+  }
+
+  .contact-link {
+    margin-top: 50px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .contact {
+    min-height: 80vh;
+
+    padding: 90px 24px;
+  }
+
+  .contact-label {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+
+    margin-bottom: 25px;
+  }
+
+  .contact h2 {
+    font-size: 58px;
+    line-height: 0.9;
+    letter-spacing: -3px;
+  }
+
+  .contact-link {
+    margin-top: 45px;
+
+    padding: 14px 24px;
+
+    font-size: 12px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+  .contact {
+    min-height: 75vh;
+
+    padding: 70px 20px;
+  }
+
+  .contact-label {
+    font-size: 11px;
+    margin-bottom: 22px;
+  }
+
+  .contact h2 {
+    font-size: 48px;
+    letter-spacing: -2.5px;
+  }
+
+  .contact-link {
+    margin-top: 35px;
+
+    padding: 13px 22px;
+
+    font-size: 11px;
+  }
+}

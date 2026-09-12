@@ -1,0 +1,225 @@
+/* =========================
+   PROCESS SECTION
+========================= */
+
+.process {
+  padding: 140px 6vw;
+  background: #f5f5f0;
+  color: #111;
+}
+
+/* Top row */
+
+.process-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 80px;
+  color: #111;
+}
+
+/* Main heading */
+
+.process h2 {
+  font-size: clamp(60px, 10vw, 150px);
+  line-height: 0.88;
+  letter-spacing: -5px;
+  margin: 0 0 100px;
+  text-align: center;
+  color: #111;
+  font-weight: 700;
+}
+
+/* Process cards grid */
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid #555;
+}
+
+/* Individual card */
+
+.process-card {
+  padding: 35px 25px;
+  border-right: 1px solid #555;
+  text-align: center;
+  color: #111;
+  min-height: 300px;
+}
+
+/* Remove right border from last card */
+
+.process-card:last-child {
+  border-right: none;
+}
+
+/* Card number */
+
+.process-card span {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 70px;
+  color: #111;
+}
+
+/* Card title */
+
+.process-card h3 {
+  font-size: clamp(28px, 3vw, 45px);
+  line-height: 1;
+  margin: 0 0 25px;
+  color: #111;
+  font-weight: 700;
+}
+
+/* Card description */
+
+.process-card p {
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 260px;
+  margin: 0 auto;
+  color: #111;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .process {
+    padding: 100px 5vw;
+  }
+
+  .process-top {
+    margin-bottom: 60px;
+  }
+
+  .process h2 {
+    font-size: clamp(55px, 10vw, 100px);
+    margin-bottom: 70px;
+  }
+
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .process-card {
+    min-height: 280px;
+    border-bottom: 1px solid #555;
+  }
+
+  .process-card:nth-child(2) {
+    border-right: none;
+  }
+
+  .process-card span {
+    margin-bottom: 50px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .process {
+    padding: 80px 40px;
+    background: #f5f5f0;
+    color: #111;
+  }
+
+  .process-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 55px;
+  }
+
+  .process h2 {
+    font-size: clamp(48px, 13vw, 75px);
+    line-height: 0.9;
+    letter-spacing: -3px;
+    margin: 0 0 80px;
+    text-align: center;
+    color: #111;
+  }
+
+  .process-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-top: 1px solid #555;
+  }
+
+  .process-card {
+    padding: 55px 20px;
+    min-height: auto;
+    border-right: none;
+    border-bottom: 1px solid #555;
+    text-align: center;
+    color: #111;
+  }
+
+  .process-card:last-child {
+    border-bottom: none;
+  }
+
+  .process-card span {
+    font-size: 18px;
+    margin-bottom: 65px;
+    color: #111;
+  }
+
+  .process-card h3 {
+    font-size: 42px;
+    line-height: 1;
+    margin-bottom: 35px;
+    color: #111;
+  }
+
+  .process-card p {
+    font-size: 20px;
+    line-height: 1.5;
+    max-width: 330px;
+    margin: 0 auto;
+    color: #111;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+  .process {
+    padding: 70px 25px;
+  }
+
+  .process-top {
+    font-size: 12px;
+  }
+
+  .process h2 {
+    font-size: 45px;
+    letter-spacing: -2px;
+  }
+
+  .process-card h3 {
+    font-size: 36px;
+  }
+
+  .process-card p {
+    font-size: 18px;
+  }
+}
