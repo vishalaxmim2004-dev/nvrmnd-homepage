@@ -1,4 +1,5 @@
 import "./Hero.css";
+import heroImage from "../assets/hero.png";
 import {motion} from "framer-motion";
 function Hero() {
   return (
@@ -51,7 +52,7 @@ function Hero() {
           transition={{duration: 1, delay: 0.4}}
         >
           <img
-            src="/hero.png"
+            src= {heroImage}
             alt="NVRMND creative visual"
           />
         </motion.div>
